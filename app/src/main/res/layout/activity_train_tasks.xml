@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    tools:context=".TrainTasks">
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Кнопка назад -->
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:textStyle="bold"
+            android:backgroundTint="#dba62a"
+            android:textSize="14sp"
+            android:text="Назад" />
+
+        <!-- ЗАВДАННЯ 1 -->
+        <TextView
+            android:id="@+id/task_label1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="1. Умовні вирази, if, when (завдання №2)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/input_value1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:hint="Ваш вік"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/ok_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="#121212"
+                android:text="ok" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result_label1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:text="Статус доступу:" />
+
+        <!-- ЗАВДАННЯ 2 -->
+        <TextView
+            android:id="@+id/task_label2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="2. Цикли та ітерації (завдання №13)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/input_value2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:hint="Введіть число"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/ok_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="#121212"
+                android:text="ok" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result_label2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:text="Ваша сума:" />
+
+        <!-- ЗАВДАННЯ 3 -->
+        <TextView
+            android:id="@+id/task_label3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="3. Масиви, списки (завдання №19)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/input_value3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:hint="Введіть число"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/ok_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="#121212"
+                android:text="ok" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result_label3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:text="Статус пошуку:" />
+
+        <!-- ЗАВДАННЯ 4 -->
+        <TextView
+            android:id="@+id/task_label4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="4. Null safety (завдання №22)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/input_value4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:hint="Введіть своє ім'я"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/ok_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="#121212"
+                android:text="ok" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result_label4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:text="Привітання:" />
+
+        <!-- ЗАВДАННЯ 5 -->
+        <TextView
+            android:id="@+id/task_label5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="5. Обробка винятків (завдання №30)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/input_value5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:hint="Введіть ціле число"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/ok_button5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="#121212"
+                android:text="ok" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

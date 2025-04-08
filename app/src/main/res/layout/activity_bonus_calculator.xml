@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    tools:context=".BonusCalculator">
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:backgroundTint="#dba62a"
+            android:textSize="14sp"
+            android:text="Назад" />
+
+        <TextView
+            android:id="@+id/task_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Калькулятор бонусів" />
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:hint="Введіть і'мя"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/input_salary"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:hint="Введіть оклад"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/input_bonus"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:hint="Введіть коефіцієнт бонусу"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/done_button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="#121212"
+                android:text="готово" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="#121212"
+                android:text="додати" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/biggest_bonus_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:text="Отримувач найбільшого бонусу:" />
+
+        <TextView
+            android:id="@+id/total_sum_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:text="Загальна сума бонусів:" />
+
+        <TextView
+            android:id="@+id/number_different_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:text="Кількість 'відмінних':" />
+
+    </LinearLayout>
+
+
+</ScrollView>
